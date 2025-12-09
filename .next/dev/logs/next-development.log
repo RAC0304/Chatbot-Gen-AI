@@ -1,0 +1,38 @@
+[00:00:02.999] Server  LOG      ✓ Ready in 2.3s
+[00:00:06.333] Server  LOG      ○ Compiling / ...
+[00:00:11.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.030] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:12.030] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:12.030] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765287846608}
+[00:02:26.181] Server  LOG      ✓ Compiled in 317ms
+[00:02:41.895] Browser LOG     Sending message to API: halo
+[00:02:42.929] Server  LOG     Processing message: "halo"
+[00:02:44.235] Server  LOG     Generated response: "Selamat datang! Saya siap membahas apapun yang Anda ingin tahu."
+[00:02:44.360] Browser LOG     API response status: 200
+[00:02:44.361] Browser LOG     API response data: {"response":"Selamat datang! Saya siap membahas apapun yang Anda ingin tahu."}
+[00:02:52.504] Server  LOG     Processing message: "apa kabar?"
+[00:02:52.585] Browser LOG     Sending message to API: apa kabar?
+[00:02:53.123] Server  LOG     Generated response: "Selamat datang! Saya siap membahas apapun yang Anda ingin tahu."
+[00:02:53.232] Browser LOG     API response status: 200
+[00:02:53.232] Browser LOG     API response data: {"response":"Selamat datang! Saya siap membahas apapun yang Anda ingin tahu."}
+[00:03:07.466] Server  LOG     Processing message: "mau nanya tentang web"
+[00:03:07.550] Browser LOG     Sending message to API: mau nanya tentang web
+[00:03:08.457] Server  LOG     Generated response: "Saya siap membantu dengan berbagai topik tech! Coba tanyakan tentang: programming languages, frameworks, career transitions, productivity hacks, atau emerging technologies."
+[00:03:08.567] Browser LOG     API response status: 200
+[00:03:08.567] Browser LOG     API response data: {"response":"Saya siap membantu dengan berbagai topik tech! Coba tanyakan tentang: programming languages, frameworks, career transitions, productivity hacks, atau emerging technologies."}
+[00:03:27.525] Server  LOG     Processing message: "frameworks"
+[00:03:27.605] Browser LOG     Sending message to API: frameworks
+[00:03:28.790] Server  LOG     Generated response: "Modern web development stack: Frontend (HTML/CSS/JS + framework), Backend (Node.js/Python/Java), Database, Cloud deployment (AWS/Vercel/Netlify)."
+[00:03:28.898] Browser LOG     API response status: 200
+[00:03:28.898] Browser LOG     API response data: {"response":"Modern web development stack: Frontend (HTML/CSS/JS + framework), Backend (Node.js/Python/Java), Database, Cloud deployment (AWS/Vercel/Netlify)."}
+[00:03:39.673] Server  LOG     Processing message: "terimakasih"
+[00:03:39.761] Browser LOG     Sending message to API: terimakasih
+[00:03:41.014] Server  LOG     Generated response: "Glad I could help! Jangan lupa praktek apa yang sudah dipelajari. Theory without practice adalah just wishful thinking. Good luck! 🌟"
+[00:03:41.123] Browser LOG     API response status: 200
+[00:03:41.123] Browser LOG     API response data: {"response":"Glad I could help! Jangan lupa praktek apa yang sudah dipelajari. Theory without practice adalah just wishful thinking. Good luck! 🌟"}
+[00:08:09.029] Server  LOG     Processing message: "siapa kamu?"
+[00:08:09.034] Browser LOG     Sending message to API: siapa kamu?
+[00:08:09.783] Server  LOG     Generated response: "Perkenalkan, saya Neural - sebuah AI chatbot yang dikembangkan untuk memberikan bantuan dan informasi. Saya senang bisa membantu Anda!"
+[00:08:09.893] Browser LOG     API response status: 200
+[00:08:09.893] Browser LOG     API response data: {"response":"Perkenalkan, saya Neural - sebuah AI chatbot yang dikembangkan untuk memberikan bantuan dan informasi. Saya senang bisa membantu Anda!"}
+[00:21:26.465] Server  LOG      ✓ Compiled in 370ms
