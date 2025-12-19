@@ -475,12 +475,12 @@ function MessageBubble({ message }) {
                     className: "w-3 h-3 md:w-4 md:h-4 text-white"
                 }, void 0, false, {
                     fileName: "[project]/components/message-bubble.tsx",
-                    lineNumber: 82,
+                    lineNumber: 83,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/message-bubble.tsx",
-                lineNumber: 81,
+                lineNumber: 82,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -494,7 +494,7 @@ function MessageBubble({ message }) {
                                 children: message.text
                             }, void 0, false, {
                                 fileName: "[project]/components/message-bubble.tsx",
-                                lineNumber: 92,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this),
                             message.imageUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -508,12 +508,32 @@ function MessageBubble({ message }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/components/message-bubble.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 98,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/message-bubble.tsx",
-                                lineNumber: 96,
+                                lineNumber: 97,
+                                columnNumber: 13
+                            }, this),
+                            message.videoUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mt-3",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                    src: message.videoUrl,
+                                    controls: true,
+                                    className: "rounded-lg max-w-full h-auto shadow-lg border border-cyan-500/30",
+                                    style: {
+                                        maxHeight: '400px'
+                                    },
+                                    children: "Browser Anda tidak mendukung video HTML5."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/message-bubble.tsx",
+                                    lineNumber: 110,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/message-bubble.tsx",
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this),
                             message.timestamp && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -521,13 +541,13 @@ function MessageBubble({ message }) {
                                 children: message.timestamp
                             }, void 0, false, {
                                 fileName: "[project]/components/message-bubble.tsx",
-                                lineNumber: 107,
+                                lineNumber: 122,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/message-bubble.tsx",
-                        lineNumber: 86,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     isAI && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -541,7 +561,7 @@ function MessageBubble({ message }) {
                                     className: "w-3 h-3 mr-1"
                                 }, void 0, false, {
                                     fileName: "[project]/components/message-bubble.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 140,
                                     columnNumber: 17
                                 }, this),
                                 "Stop"
@@ -552,7 +572,7 @@ function MessageBubble({ message }) {
                                     className: "w-3 h-3 mr-1"
                                 }, void 0, false, {
                                     fileName: "[project]/components/message-bubble.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 145,
                                     columnNumber: 17
                                 }, this),
                                 "Dengar"
@@ -560,19 +580,19 @@ function MessageBubble({ message }) {
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/components/message-bubble.tsx",
-                        lineNumber: 115,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/message-bubble.tsx",
-                lineNumber: 85,
+                lineNumber: 86,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/message-bubble.tsx",
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }
@@ -628,6 +648,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mic$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mic.js [app-client] (ecmascript) <export default as Mic>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mic$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MicOff$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mic-off.js [app-client] (ecmascript) <export default as MicOff>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/image.js [app-client] (ecmascript) <export default as Image>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
 ;
@@ -771,6 +792,24 @@ function ChatInput({ onSendMessage, onGenerateImage, isLoading = false }) {
                         lineNumber: 103,
                         columnNumber: 11
                     }, this),
+                    onGenerateImage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        onClick: handleGenerateImage,
+                        size: "icon",
+                        disabled: !input.trim() || isLoading,
+                        className: "rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg hover:shadow-xl transition-all disabled:opacity-50 h-10 w-10 md:h-12 md:w-12",
+                        title: "Generate Image",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"], {
+                            className: "w-4 h-4 md:w-5 md:h-5"
+                        }, void 0, false, {
+                            fileName: "[project]/components/chat-input.tsx",
+                            lineNumber: 130,
+                            columnNumber: 15
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/chat-input.tsx",
+                        lineNumber: 123,
+                        columnNumber: 13
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                         onClick: handleSend,
                         size: "icon",
@@ -847,19 +886,6 @@ function ChatArea() {
     ]);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const messagesEndRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const messageIdCounter = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(2);
-    // Cleanup: Stop all speech synthesis on unmount/refresh
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ChatArea.useEffect": ()=>{
-            return ({
-                "ChatArea.useEffect": ()=>{
-                    if (("TURBOPACK compile-time value", "object") !== 'undefined' && window.speechSynthesis) {
-                        window.speechSynthesis.cancel();
-                    }
-                }
-            })["ChatArea.useEffect"];
-        }
-    }["ChatArea.useEffect"], []);
     // Auto scroll to bottom when new messages are added
     const scrollToBottom = ()=>{
         messagesEndRef.current?.scrollIntoView({
@@ -877,10 +903,10 @@ function ChatArea() {
     const sendMessage = async (messageText)=>{
         // Add user message to chat
         const userMessage = {
-            id: messageIdCounter.current++,
+            id: Date.now(),
             text: messageText,
             sender: "user",
-            timestamp: new Date().toLocaleTimeString()
+            timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable"
         };
         setMessages((prev)=>[
                 ...prev,
@@ -907,10 +933,10 @@ function ChatArea() {
             }
             // Add AI response to chat
             const aiMessage = {
-                id: messageIdCounter.current++,
+                id: Date.now() + 1,
                 text: data.response,
                 sender: "ai",
-                timestamp: new Date().toLocaleTimeString()
+                timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable"
             };
             setMessages((prev)=>[
                     ...prev,
@@ -920,10 +946,10 @@ function ChatArea() {
             console.error('Error sending message:', error);
             // Add error message
             const errorMessage = {
-                id: messageIdCounter.current++,
+                id: Date.now() + 1,
                 text: "Maaf, terjadi kesalahan. Silakan coba lagi dalam beberapa saat.",
                 sender: "ai",
-                timestamp: new Date().toLocaleTimeString()
+                timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable"
             };
             setMessages((prev)=>[
                     ...prev,
@@ -936,10 +962,10 @@ function ChatArea() {
     const generateImage = async (prompt)=>{
         // Add user message to chat
         const userMessage = {
-            id: messageIdCounter.current++,
+            id: Date.now(),
             text: `Generate image: ${prompt}`,
             sender: "user",
-            timestamp: new Date().toLocaleTimeString(),
+            timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable",
             type: "text"
         };
         setMessages((prev)=>[
@@ -966,10 +992,10 @@ function ChatArea() {
             }
             // Add AI response with image
             const aiMessage = {
-                id: messageIdCounter.current++,
+                id: Date.now() + 1,
                 text: `Gambar berhasil dibuat untuk prompt: "${prompt}"`,
                 sender: "ai",
-                timestamp: new Date().toLocaleTimeString(),
+                timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable",
                 imageUrl: data.imageUrl,
                 type: "image"
             };
@@ -981,10 +1007,10 @@ function ChatArea() {
             console.error('Error generating image:', error);
             // Add error message
             const errorMessage = {
-                id: messageIdCounter.current++,
+                id: Date.now() + 1,
                 text: error.message?.includes('Model is currently loading') ? "Model sedang loading. Silakan coba lagi dalam beberapa saat." : "Maaf, gagal membuat gambar. Silakan coba lagi.",
                 sender: "ai",
-                timestamp: new Date().toLocaleTimeString(),
+                timestamp: ("TURBOPACK compile-time truthy", 1) ? new Date().toLocaleTimeString() : "TURBOPACK unreachable",
                 type: "text"
             };
             setMessages((prev)=>[
@@ -1011,7 +1037,7 @@ function ChatArea() {
                                     children: "Neural AI Assistant"
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-area.tsx",
-                                    lineNumber: 175,
+                                    lineNumber: 165,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1019,13 +1045,13 @@ function ChatArea() {
                                     children: "Chatbot cerdas dengan dataset lokal"
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-area.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-area.tsx",
-                            lineNumber: 174,
+                            lineNumber: 164,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1035,7 +1061,7 @@ function ChatArea() {
                                         message: message
                                     }, message.id, false, {
                                         fileName: "[project]/components/chat-area.tsx",
-                                        lineNumber: 182,
+                                        lineNumber: 172,
                                         columnNumber: 15
                                     }, this)),
                                 isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1052,7 +1078,7 @@ function ChatArea() {
                                                             className: "w-2 h-2 bg-foreground/40 rounded-full animate-pulse"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/chat-area.tsx",
-                                                            lineNumber: 189,
+                                                            lineNumber: 179,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1062,7 +1088,7 @@ function ChatArea() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/chat-area.tsx",
-                                                            lineNumber: 190,
+                                                            lineNumber: 180,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1072,13 +1098,13 @@ function ChatArea() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/chat-area.tsx",
-                                                            lineNumber: 191,
+                                                            lineNumber: 181,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/chat-area.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 178,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1086,47 +1112,47 @@ function ChatArea() {
                                                     children: "AI sedang berpikir..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/chat-area.tsx",
-                                                    lineNumber: 193,
+                                                    lineNumber: 183,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/chat-area.tsx",
-                                            lineNumber: 187,
+                                            lineNumber: 177,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/chat-area.tsx",
-                                        lineNumber: 186,
+                                        lineNumber: 176,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-area.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 175,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     ref: messagesEndRef
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-area.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-area.tsx",
-                            lineNumber: 180,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/chat-area.tsx",
-                    lineNumber: 172,
+                    lineNumber: 162,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/chat-area.tsx",
-                lineNumber: 171,
+                lineNumber: 161,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$chat$2d$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1135,17 +1161,17 @@ function ChatArea() {
                 isLoading: isLoading
             }, void 0, false, {
                 fileName: "[project]/components/chat-area.tsx",
-                lineNumber: 205,
+                lineNumber: 195,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/chat-area.tsx",
-        lineNumber: 170,
+        lineNumber: 160,
         columnNumber: 5
     }, this);
 }
-_s(ChatArea, "bt7HLJrfvZwaw27Jt0Y+Ee/dACI=");
+_s(ChatArea, "b9YVIce7XjPmTLhCyn8oMSThiTg=");
 _c = ChatArea;
 var _c;
 __turbopack_context__.k.register(_c, "ChatArea");

@@ -53,7 +53,7 @@ export const chatDataset: ChatDataset[] = [
 
     // Cara kerja Bot
     {
-        patterns: ["cara kerja", "bagaimana kamu bekerja", "teknologi bot", "AI technology", "machine learning bot", "how do you work"],
+        patterns: ["cara kerja", "teknologi bot", "AI technology", "machine learning bot", "how do you work"],
         responses: [
             "Saya bekerja menggunakan teknologi AI dan natural language processing untuk memahami pertanyaan Anda dan memberikan respons yang relevan. Saya dilatih dengan berbagai data untuk bisa membantu Anda.",
             "Sebagai AI, saya menggunakan algoritma machine learning untuk memproses bahasa natural dan memberikan jawaban yang sesuai dengan konteks percakapan kita.",
