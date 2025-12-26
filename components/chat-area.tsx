@@ -10,8 +10,6 @@ interface Message {
   text: string;
   sender: "ai" | "user";
   timestamp?: string;
-  imageUrl?: string;
-  type?: "text" | "image";
 }
 
 interface ChatAreaProps {
@@ -75,7 +73,7 @@ export default function ChatArea({ onFirstMessage, initialMessages = [], onMessa
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ 
+        body: JSON.stringify({
           message: messageText,
           chatHistory: messages // Kirim history untuk context
         }),
@@ -116,69 +114,7 @@ export default function ChatArea({ onFirstMessage, initialMessages = [], onMessa
     }
   };
 
-  const generateImage = async (prompt: string) => {
-    // Add user message to chat
-    const userMessage: Message = {
-      id: Date.now(),
-      text: `Generate image: ${prompt}`,
-      sender: "user",
-      timestamp: typeof window !== 'undefined' ? new Date().toLocaleTimeString() : undefined,
-      type: "text"
-    };
 
-    setMessages(prev => [...prev, userMessage]);
-    setIsLoading(true);
-
-    try {
-      console.log('Generating image with prompt:', prompt);
-
-      const response = await fetch('/api/generate-image', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ prompt }),
-      });
-
-      console.log('Image API response status:', response.status);
-
-      const data = await response.json();
-      console.log('Image API response data received');
-
-      if (!response.ok) {
-        throw new Error(data.error || `HTTP ${response.status}: ${response.statusText}`);
-      }
-
-      // Add AI response with image
-      const aiMessage: Message = {
-        id: Date.now() + 1,
-        text: `Gambar berhasil dibuat untuk prompt: "${prompt}"`,
-        sender: "ai",
-        timestamp: typeof window !== 'undefined' ? new Date().toLocaleTimeString() : undefined,
-        imageUrl: data.imageUrl,
-        type: "image"
-      };
-
-      setMessages(prev => [...prev, aiMessage]);
-    } catch (error: any) {
-      console.error('Error generating image:', error);
-
-      // Add error message
-      const errorMessage: Message = {
-        id: Date.now() + 1,
-        text: error.message?.includes('Model is currently loading') 
-          ? "Model sedang loading. Silakan coba lagi dalam beberapa saat." 
-          : "Maaf, gagal membuat gambar. Silakan coba lagi.",
-        sender: "ai",
-        timestamp: typeof window !== 'undefined' ? new Date().toLocaleTimeString() : undefined,
-        type: "text"
-      };
-
-      setMessages(prev => [...prev, errorMessage]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   return (
     <div className="flex-1 flex flex-col h-full bg-slate-950/80">
@@ -216,7 +152,7 @@ export default function ChatArea({ onFirstMessage, initialMessages = [], onMessa
       )}
 
       {/* Chat Input */}
-      <ChatInput onSendMessage={sendMessage} onGenerateImage={generateImage} isLoading={isLoading} />
+      <ChatInput onSendMessage={sendMessage} isLoading={isLoading} />
     </div>
   )
 }

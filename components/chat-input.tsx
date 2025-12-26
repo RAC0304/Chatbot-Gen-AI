@@ -7,11 +7,10 @@ import { Input } from "@/components/ui/input"
 
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
-  onGenerateImage?: (prompt: string) => void;
   isLoading?: boolean;
 }
 
-export default function ChatInput({ onSendMessage, onGenerateImage, isLoading = false }: ChatInputProps) {
+export default function ChatInput({ onSendMessage, isLoading = false }: ChatInputProps) {
   const [input, setInput] = useState("")
   const [isListening, setIsListening] = useState(false)
   const [recognition, setRecognition] = useState<any>(null)
@@ -73,12 +72,7 @@ export default function ChatInput({ onSendMessage, onGenerateImage, isLoading = 
     }
   };
 
-  const handleGenerateImage = () => {
-    if (input.trim() && !isLoading && onGenerateImage) {
-      onGenerateImage(input.trim());
-      setInput("");
-    }
-  };
+
 
   return (
     <div className="fixed bottom-4 left-4 right-4 md:left-80 md:right-6 pointer-events-none">
@@ -104,11 +98,10 @@ export default function ChatInput({ onSendMessage, onGenerateImage, isLoading = 
             onClick={toggleListening}
             size="icon"
             disabled={isLoading}
-            className={`rounded-full ${
-              isListening 
-                ? 'bg-red-500 hover:bg-red-600 animate-pulse' 
+            className={`rounded-full ${isListening
+                ? 'bg-red-500 hover:bg-red-600 animate-pulse'
                 : 'bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600'
-            } text-white shadow-lg hover:shadow-xl transition-all disabled:opacity-50 h-10 w-10 md:h-12 md:w-12`}
+              } text-white shadow-lg hover:shadow-xl transition-all disabled:opacity-50 h-10 w-10 md:h-12 md:w-12`}
             title="Voice Input"
           >
             {isListening ? (
@@ -117,7 +110,7 @@ export default function ChatInput({ onSendMessage, onGenerateImage, isLoading = 
               <Mic className="w-4 h-4 md:w-5 md:h-5" />
             )}
           </Button>
-          
+
           {/* Send Button */}
           <Button
             onClick={handleSend}

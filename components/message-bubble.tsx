@@ -9,8 +9,6 @@ interface Message {
   text: string
   sender: "ai" | "user"
   timestamp?: string
-  imageUrl?: string
-  isGeneratingImage?: boolean
 }
 
 interface MessageBubbleProps {
@@ -39,7 +37,7 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
     }
 
     window.addEventListener('beforeunload', handleBeforeUnload)
-    
+
     return () => {
       window.removeEventListener('beforeunload', handleBeforeUnload)
     }
@@ -61,11 +59,11 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
       utterance.lang = 'id-ID' // Bahasa Indonesia
       utterance.rate = 0.9 // Kecepatan bicara
       utterance.pitch = 1.0 // Nada suara
-      
+
       utterance.onend = () => {
         setIsSpeaking(false)
       }
-      
+
       utterance.onerror = () => {
         setIsSpeaking(false)
       }
@@ -85,40 +83,27 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
       <div className="flex flex-col gap-1">
         <div
           className={`max-w-[280px] md:max-w-md px-3 md:px-4 py-2 md:py-3 rounded-xl ${isAI
-              ? "bg-card border border-cyan-500/30 text-card-foreground"
-              : "bg-gradient-to-r from-cyan-600 to-purple-600 text-white"
+            ? "bg-card border border-cyan-500/30 text-card-foreground"
+            : "bg-gradient-to-r from-cyan-600 to-purple-600 text-white"
             }`}
         >
           <p className="text-xs md:text-sm leading-relaxed whitespace-pre-wrap">{message.text}</p>
-          
-          {/* Display image if available */}
-          {message.imageUrl && (
-            <div className="mt-3">
-              <img 
-                src={message.imageUrl} 
-                alt="Generated image" 
-                className="rounded-lg max-w-full h-auto shadow-lg border border-cyan-500/30"
-                style={{ maxHeight: '400px' }}
-              />
-            </div>
-          )}
-          
+
           {message.timestamp && (
             <p className={`text-xs mt-1 ${isAI ? 'text-muted-foreground' : 'text-white/70'}`}>
               {message.timestamp}
             </p>
           )}
         </div>
-        
+
         {/* Speaker button for AI messages */}
         {isAI && (
           <Button
             onClick={speakText}
             size="sm"
             variant="ghost"
-            className={`self-start h-6 px-2 text-xs ${
-              isSpeaking ? 'text-cyan-500 animate-pulse' : 'text-muted-foreground hover:text-cyan-500'
-            }`}
+            className={`self-start h-6 px-2 text-xs ${isSpeaking ? 'text-cyan-500 animate-pulse' : 'text-muted-foreground hover:text-cyan-500'
+              }`}
           >
             {isSpeaking ? (
               <>

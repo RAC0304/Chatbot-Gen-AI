@@ -11,8 +11,6 @@ interface Message {
   text: string
   sender: "ai" | "user"
   timestamp?: string
-  imageUrl?: string
-  type?: "text" | "image"
 }
 
 interface ChatHistory {
@@ -62,8 +60,8 @@ export default function Home() {
   // Update current chat messages in history whenever currentMessages changes
   useEffect(() => {
     if (currentChatId && currentMessages.length > 0) {
-      setChatHistory(prev => prev.map(chat => 
-        chat.id === currentChatId 
+      setChatHistory(prev => prev.map(chat =>
+        chat.id === currentChatId
           ? { ...chat, messages: currentMessages }
           : chat
       ))
@@ -108,10 +106,10 @@ export default function Home() {
     }).catch(e => {
       console.error('Failed to delete chat:', e)
     })
-    
+
     // Update local state
     setChatHistory(prev => prev.filter(chat => chat.id !== chatId))
-    
+
     // If deleting current chat, reset
     if (currentChatId === chatId) {
       setCurrentChatId(null)
@@ -128,21 +126,21 @@ export default function Home() {
     <div className="flex h-screen bg-background">
       {/* Global Speech Cleanup Handler */}
       <SpeechCleanup />
-      
+
       {/* Sidebar - Hidden on mobile by default, collapsible on desktop */}
       <div className={`${sidebarOpen ? 'fixed inset-0 z-40 md:relative md:z-0' : 'hidden'} md:block`}>
         {/* Overlay for mobile */}
         {sidebarOpen && (
-          <div 
-            className="fixed inset-0 bg-black/50 md:hidden" 
+          <div
+            className="fixed inset-0 bg-black/50 md:hidden"
             onClick={() => setSidebarOpen(false)}
           />
         )}
-        
+
         <div className="relative z-50">
-          <Sidebar 
-            activeTab={activeTab} 
-            setActiveTab={setActiveTab} 
+          <Sidebar
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
             collapsed={!sidebarOpen}
             onToggle={() => setSidebarOpen(!sidebarOpen)}
             onNewChat={handleNewChat}
@@ -188,8 +186,8 @@ export default function Home() {
         {/* Content Area */}
         <div className="flex-1 overflow-hidden">
           {activeTab === "chat" && (
-            <ChatArea 
-              key={chatKey} 
+            <ChatArea
+              key={chatKey}
               onFirstMessage={handleFirstMessage}
               initialMessages={currentMessages}
               onMessagesUpdate={handleMessagesUpdate}
